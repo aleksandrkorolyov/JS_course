@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function mid(a,b) {
+        c=(a+b)/2;
+        return(c);
+    }
+//    alert(mid(2,4));
+function pow(a,b) {
+    res=a;
+    for(var i=1;i<b;i++){
+        res*=a;
+    }
+    return(res);
+}
+//    alert(pow(2,3))
+    function questionFunc() {
+        var a = prompt('a?');
+
+        switch (a) {
+            case '0':
+                alert('0');
+                break;
+
+            case '1':
+                alert('1');
+                break;
+            case '2' || '3':
+                alert('2,3');
+                break;
+            case '3':
+                alert('2,3');
+
+        }
+    }
+questionFunc();
+</script>
+</body>
+</html>
