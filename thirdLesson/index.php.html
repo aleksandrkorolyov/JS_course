@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    str = `we are future developers`;
+    l = `e`;
+        function count(str,l) {
+        var arr = new Array();
+        var pos = -1;
+        var i = 0;
+        while ((pos = str.indexOf(l, pos + 1)) != -1) {
+            arr[i]=pos;
+            i++;
+        }
+            return(arr.length);
+    }
+    
+    
+    function powX(x,n) {
+        var a = Math.round(x,0);
+        var b = Math.round(n,0);
+        return (Math.pow(a,b));
+        
+    }
+    
+    function chekingComb(str,comb) {
+        str = str.toLowerCase();
+        comb = comb.toLowerCase();
+    if (str.indexOf(comb,0)>0){
+        return 'true'
+    }else {return 'false'}
+    }
+
+//    count(str,l);
+//    powX(4.2,6.1);
+    alert(chekingComb('my naMe is Alex','name'));
+</script>
+
+</body>
+</html>
