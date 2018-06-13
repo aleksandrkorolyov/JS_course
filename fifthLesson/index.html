@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const infoAboutPersons = [{
+        name: `Ivan`,
+        sex: `M`,
+        age: 21
+    },
+        {
+            name: `Olga`,
+            sex: `W`,
+            age: 19
+        },
+        {
+            name: `Oleg`,
+            sex: `M`,
+            age: 27
+        },
+        {
+            name: `Ann`,
+            sex: `W`,
+            age: 21
+        },
+        {
+            name: `Alex`,
+            sex: `M`,
+            age: 30
+        }
+    ];
+
+    function middleAgeBySex(infoAboutPersons,sex){
+        var sum = 0 ;
+        var k=0;
+        infoAboutPersons.forEach(function (item,i,infoAboutPersons) {
+            if (item.sex==sex) {
+                sum += item.age;
+                k++;
+            }
+        });
+    return(sum/k);
+}
+    middleAgeBySex(infoAboutPersons,'M');
+</script>
+
+</body>
+</html>
